@@ -1,0 +1,21 @@
+<ng-template #dialog let-ref="dialogRef">
+  <nb-card>
+    <nb-card-header>Template Dialog</nb-card-header>
+    <nb-card-body>
+      <div *ngFor="let field of dataFromDB;" class="cardBodyItem">
+        <div *ngIf="field.type==='input'" class="cardBodyField">
+          <app-customInput [field]="field"></app-customInput>
+        </div>
+      </div>
+    </nb-card-body>
+    <nb-card-footer>
+      <button nbButton (click)="ref.close()">Close Dialog</button>
+    </nb-card-footer>
+  </nb-card>
+</ng-template>
+
+<div class="item">
+  <nb-user name="Steam" title=""
+           picture="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Steam_icon_logo.svg/800px-Steam_icon_logo.svg.png"
+           (click)="open(dialog)"></nb-user>
+</div>

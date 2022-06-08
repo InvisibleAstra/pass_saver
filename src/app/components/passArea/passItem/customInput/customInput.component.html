@@ -1,0 +1,4 @@
+<input nbInput [readonly]="field.readonly" [value]="field.value" #input [type]="viewAccess">
+<nb-icon icon="copy-outline" class="fieldIcon test" (click) = "copyInfo()"></nb-icon>
+<nb-icon icon="eye-outline" class="fieldIcon test" (click) = "changeViewAccess()"></nb-icon>
+<nb-icon icon="edit-2-outline" class="fieldIcon test" (click)="changeAccessToFiled()"></nb-icon>

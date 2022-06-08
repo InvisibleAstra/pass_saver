@@ -1,0 +1,13 @@
+.fieldIcon {
+  margin-left: 9px;
+}
+
+.test:hover {
+  background: #192038;
+  border: 1px grey solid;
+  border-radius: 5px;
+}
+.test:hover::before {
+  box-shadow: 0 0 0 5px #b18597, 0 0.5em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.5em, -1em);
+}
